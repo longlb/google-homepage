@@ -5,44 +5,63 @@
         <meta charset="utf-8">
         <title>Google (by Louis Bui)</title>
         <link href="style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
-    <body>
+    <body id="search">
         <header>
             <nav>
-                <ul>
-                    <li>About</li>
-                    <li>Store</li>
-                    <li>Gmail</li>
-                    <li>Images</li>
-                    <li>9-tile</li>
-                    <li>Profile IMG</li>
-                </ul>
+                
+                <div class="nav-left">
+                    <ul>
+                        <li><a href="#search">About</a></li>
+                        <li><a href="#search">Store</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#search">Gmail</a></li>
+                        <li><a href="#search">Images</a></li>
+                        <li><a href="#search"><img src="apps.png" class="apps" id="apps"></a></li>
+                        <input type="submit" value="Sign in" class="signin">
+                    </ul>
+                </div>
+                
             </nav>
         </header>
 
         <main>
+            <label for="query"><img src="google.png" class="logo"></label>
             <form>
-                <label for="query"><img src="google.png"></label>
-                <input type="text" name="query">
-                <input type="submit" value="Google Search">
-                <input type="submit" value="I'm Feeling Lucky">
+                <input class="searchbar" name="query" results="0">
+                <div>
+                    <input type="submit" value="Google Search" class="button">
+                    <input type="submit" value="I'm Feeling Lucky" class="button">
+                </div>
             </form>
         </main>
 
         <footer>
             <nav>
-                <ul>
-                    <li>Advertising</li>
-                    <li>Business</li>
-                    <li>How Search works</li>
-                    <li>Privacy</li>
-                    <li>Terms</li>
-                    <li>Settings</li>
-                </ul>
+
+                <div class="nav-left">
+                    <ul>
+                        <li><a href="#search">Advertising</a></li>
+                        <li><a href="#search">Business</a></li>
+                        <li><a href="#search">How Search Works</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="#search">Privacy</a></li>
+                        <li><a href="#search">Terms</a></li>
+                        <li><a href="#search">Settings</a></li>
+                    </ul>
+                </div>
+
             </nav>
         </footer>
-
     </body>
-    
 </html>
